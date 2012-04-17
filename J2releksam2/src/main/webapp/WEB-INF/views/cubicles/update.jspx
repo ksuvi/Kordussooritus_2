@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_antti_entities_Cubicle" modelAttribute="cubicle" path="/cubicles" versionField="Version" z="K7tjob/OMuQGOrYcLJ8iXpOAPzg=">
+        <field:input field="name" id="c_ee_itcollege_antti_entities_Cubicle_name" z="UhFUMZo+e313NXXwZmaexNDiX+M="/>
+        <field:input field="capacity" id="c_ee_itcollege_antti_entities_Cubicle_capacity" validationMessageCode="field_invalid_integer" z="CK//ZfIbaVY9vc/2Mi63QqFVI6Q="/>
+        <field:simple field="employees" id="c_ee_itcollege_antti_entities_Cubicle_employees" messageCode="entity_reference_not_managed" messageCodeAttribute="Employee" z="bUyRtSbiU870Bh4BzAzM/XEFGiQ="/>
+    </form:update>
+</div>

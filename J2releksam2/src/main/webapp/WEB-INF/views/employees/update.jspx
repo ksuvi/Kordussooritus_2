@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_antti_entities_Employee" modelAttribute="employee" path="/employees" versionField="Version" z="LUZyDzsrWLt7zA22vYuohCyGHTo=">
+        <field:input field="name" id="c_ee_itcollege_antti_entities_Employee_name" z="U3V71hMpjtpl7qCwi6ABOZdwuIE="/>
+        <field:input field="salary" id="c_ee_itcollege_antti_entities_Employee_salary" validationMessageCode="field_invalid_integer" z="vuVtbFsDdAqD3ZLP1CX0q/omAGg="/>
+        <field:select field="cubicle" id="c_ee_itcollege_antti_entities_Employee_cubicle" itemValue="id" items="${cubicles}" path="/cubicles" z="i2Xv4rSUefmKQoXJoin8oprjRGQ="/>
+        <field:select field="parkingspot" id="c_ee_itcollege_antti_entities_Employee_parkingspot" itemValue="id" items="${parkingspots}" path="/parkingspots" z="SOqQKE6VVinUQB2WDbGU6gEZ8Sk="/>
+    </form:update>
+</div>

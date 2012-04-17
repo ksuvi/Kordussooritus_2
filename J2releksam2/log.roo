@@ -1,0 +1,24 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-04-17 09:44:41
+project --topLevelPackage ee.itcollege.antti --projectName J2releksam2 --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-04-17 09:44:43
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-04-17 09:44:52
+persistence setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+entity --class ~.entities.Cubicle
+field string --fieldName name
+field number --fieldName capacity --type Integer
+entity --class ~.entities.ParkingSpot
+field string --fieldName name
+entity --class ~.entities.Employee
+field string --fieldName name
+field number --fieldName salary --type Long
+focus --class ~.entities.Cubicles
+// [failed] field set --fieldName employees --type ~.entities.Employee --cardinality ONE_TO_MANY --mappedBy cubicle
+focus --class ~.entities.Cubicle
+field set --fieldName employees --type ~.entities.Employee --cardinality ONE_TO_MANY --mappedBy cubicle
+focus --class ~.entities.Employee
+field reference --fieldName cubicle --type ~.entities.Cubicle --cardinality MANY_TO_ONE
+field reference --fieldName parkingspot --type ~.entities.ParkingSpot --cardinality MANY_TO_ONE
+focus --class ~.entities.ParkingSpot
+field reference --fieldName employee --type ~.entities.Employee --cardinality MANY_TO_ONE
+web mvc setup
+web mvc all --package ~.web

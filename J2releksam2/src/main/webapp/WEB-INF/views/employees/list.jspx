@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_antti_entities_Employee" items="${employees}" z="YUIYxfZ9PlOqAmS3gaV8avpesI4=">
+        <table:table data="${employees}" id="l_ee_itcollege_antti_entities_Employee" path="/employees" z="NmrEvUM4E5y4WSpfYIyy4jCfR+U=">
+            <table:column id="c_ee_itcollege_antti_entities_Employee_name" property="name" z="ZtGLDbNF92woMOeTZawdZoqG3J4="/>
+            <table:column id="c_ee_itcollege_antti_entities_Employee_salary" property="salary" z="4+GN6sdyxv2mvB5sAnz7tiBXTKE="/>
+            <table:column id="c_ee_itcollege_antti_entities_Employee_cubicle" property="cubicle" z="JrtAe1nYSgP7JqYFaAEBO42s2Os="/>
+            <table:column id="c_ee_itcollege_antti_entities_Employee_parkingspot" property="parkingspot" z="lV1OkCJbasuDVlfVbm6Ix26gCbU="/>
+        </table:table>
+    </page:list>
+</div>

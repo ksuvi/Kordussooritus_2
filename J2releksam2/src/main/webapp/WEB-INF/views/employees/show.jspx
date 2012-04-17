@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_antti_entities_Employee" object="${employee}" path="/employees" z="VxKE5Mg35wQ+Pxwq1GM290TXhQk=">
+        <field:display field="name" id="s_ee_itcollege_antti_entities_Employee_name" object="${employee}" z="4ieYG2utQK78eZEwnYb3LcF0mUc="/>
+        <field:display field="salary" id="s_ee_itcollege_antti_entities_Employee_salary" object="${employee}" z="ax1WNh6cZKZ5XVnxPOz8BWWZljE="/>
+        <field:display field="cubicle" id="s_ee_itcollege_antti_entities_Employee_cubicle" object="${employee}" z="zmX+oqmonEve+0zjmfjym4mAxME="/>
+        <field:display field="parkingspot" id="s_ee_itcollege_antti_entities_Employee_parkingspot" object="${employee}" z="48q7QdCysxskKSUJVFTfe3DNnc0="/>
+    </page:show>
+</div>

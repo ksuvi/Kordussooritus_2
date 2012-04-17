@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_antti_entities_Cubicle" items="${cubicles}" z="UuPpr9NNOnga6YQdrGvslOpag7I=">
+        <table:table data="${cubicles}" id="l_ee_itcollege_antti_entities_Cubicle" path="/cubicles" z="WPoJkCYpiDE7pVBF8gH088oWx2o=">
+            <table:column id="c_ee_itcollege_antti_entities_Cubicle_name" property="name" z="oDPbQ3Mmvwn1GEm7afRl1ZkOebI="/>
+            <table:column id="c_ee_itcollege_antti_entities_Cubicle_capacity" property="capacity" z="mStWZ0Fw0m7x1VnoWJiPpXQBnqQ="/>
+            <table:column id="c_ee_itcollege_antti_entities_Cubicle_employees" property="employees" z="2cbQADjYsa+QZKlktDf2b/nu56c="/>
+        </table:table>
+    </page:list>
+</div>
